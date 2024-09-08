@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+    /* position: relative; */
+}
+.container{
+    display: flex;
+   position: relative;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+}
+.main-name {
+    display: flex;
+    flex-direction: column;
+}
+.designation{
+    margin-left: 5px;
+}
+.main-contact{
+    margin: 1vh
+}
+
+.profile-picture{
+    position: absolute;
+    right: 30px ;;  
+   
+}
+.profile-picture img {
+    border-radius: 50%;
+    position: absolute;
+    right: 0; 
+}
+.profile-picture:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.contact , .mail{
+    color: blue;
+}
+.contact , .mail:hover{
+    cursor: pointer;
+}
+
+.personal-end {
+    background-color: blue;
+    width: 100%;
+}
+
+/* ----------------- Personal info end --------------------- */
+
+.container-2{
+    display: flex;
+}
+.main-education{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
+.institute{
+    margin-left: 30vh;
+    padding: 5px;
+}
+
+.year{
+    text-align: right;
+    color: blue;   
+}
+
+/* -------------------------------- Skills ----------------------------- */
+
+.container-3{
+    display: flex;
+}
+.main-skill{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
+.detail-skill{
+    margin-left: 35vh;
+    padding: 5px;
+
+}
+
+.years{
+    width: 100px;
+    height :50px; 
+}
+
+/* ---------------------- Work experience ------------------------ */
+.container-4{
+    display: flex;
+}
+.main-work{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
+.experience{
+    margin-left: 20vh;
+    padding: 5px;
+}
+
