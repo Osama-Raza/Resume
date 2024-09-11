@@ -27,7 +27,8 @@ body{
     margin-left: 5px;
 }
 .main-contact{
-    margin: 1vh
+    margin: 1vh;
+
 }
 
 .profile-picture{
@@ -47,6 +48,7 @@ body{
 }
 .contact , .mail{
     color: blue;
+    padding: 5px;
 }
 .contact , .mail:hover{
     cursor: pointer;
@@ -60,21 +62,29 @@ body{
 /* ----------------- Personal info end --------------------- */
 
 .container-2{
-    display: flex;
+    padding: 5px;
+    
 }
 .main-education{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 5vh;
 }
-.institute{
-    margin-left: 30vh;
+p {
     padding: 5px;
 }
 
 .year{
-    text-align: right;
     color: blue;   
+}
+.down{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: rgb(202, 201, 201);
+    border: none;
 }
 
 /* -------------------------------- Skills ----------------------------- */
@@ -84,31 +94,59 @@ body{
 }
 .main-skill{
     display: flex;
-    flex-direction: row;
     margin: 5vh;
 }
+
 .detail-skill{
-    margin-left: 35vh;
+    margin-left: 40vh;
     padding: 5px;
 
 }
-
 .years{
     width: 100px;
     height :50px; 
 }
 
 /* ---------------------- Work experience ------------------------ */
-.container-4{
-    display: flex;
-}
 .main-work{
     display: flex;
-    flex-direction: row;
-    margin: 5vh;
+    justify-content: space-between;
+    margin: 3vh;
 }
 .experience{
-    margin-left: 20vh;
     padding: 5px;
+    
+}
+.year-experince{
+    padding: 50px;
+    color: blue;
+}
+.down-2{
+    height: 30px;
+    width: 30px;
+    margin-top: 70px;
+    border-radius: 50%;
+    background-color: rgb(202, 201, 201);
+    border: none;
+}
+.down-2:hover , .down:hover{
+    cursor: pointer;
 }
 
+
+@media (min-width:388px ) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .profile-picture{
+        margin-right: -30px;
+        
+    }
+    .down {
+        margin-left: 10px;
+    }
+    .down-2{
+        margin-left: -20px;
+    }
+}
